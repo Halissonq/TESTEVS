@@ -12,7 +12,7 @@ N=3
 FIMINTERACAO=0
 while [ $FIMINTERACAO -eq 0 ]; do
         ELEMENTO=$(echo $LINHA | awk -F ' ' "{print \$${N}}")
-        if [ "$ELEMENTO" == ">" ] || [ "$ELEMENTO" == ">>" ] || [ "$ELEMENTO" == "2>" ] || [ "$ELEMENTO" == ""] ;then
+        if [ "$ELEMENTO" == ">" ] || [ "$ELEMENTO" == ">>" ] || [ "$ELEMENTO" == "2>" ] || [ "$ELEMENTO" == ""] || [ "$ELEMENTO" == ""]S;then
                 FIMINTERACAO=1
         else
                 PARAMETRO=$PARAMETRO" "$ELEMENTO
